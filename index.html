@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabahi Car Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Tabahi Car Showroom</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\background.mp3" autoplay loop></audio>
+        <div class="content">
+            <h1>Welcome to Tabahi Cars</h1>
+            <p>Where cars do Tabahiiiiiiiii!!</p>
+        </div>
+    </section>
+
+    <section class="cars">
+        <div class="car">
+            <video class="hover-video" poster="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 204407.png" muted height="300">
+                <source src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\UE4 RTX Cinematic Render- Lamborghini Terzo Millennio- neon style 4K.mp4" type="video/mp4">
+            </video>
+            <h2>Lamborghini Terzo</h2>
+        </div>
+        <div class="car">
+            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 204824.png" alt="Car 2">
+            <h2>La` Ferrari</h2>
+        </div>
+        <div class="car">
+            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 205107.png" alt="Car 3">
+            <h2>Mercedes AMG One</h2>
+        </div>
+        <div class="car">
+            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 205353.png" alt="Car 4">
+            <h2>Porsche</h2>
+        </div>
+        <div class="car">
+            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 205727.png" alt="Car 5">
+            <h2>Koenigsegg Jesko</h2>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Car Display. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Popup for video playback -->
+    <div id="video-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <video id="popup-video" controls>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
