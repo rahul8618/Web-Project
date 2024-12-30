@@ -57,3 +57,18 @@ heroSection.addEventListener('click', () => {
         console.log('Video unmuted');
     }
 });
+
+var car=document.getElementById('cars');
+
+car.addEventListener("click",carscroll);
+
+function carscroll(){
+    window.scrollTo(0, 300);
+}
+function contactscroll(){
+    window.scrollTo(0, 940);
+}
+function aboutscroll(){
+    window.scrollTo(0, 1110);
+}
+
