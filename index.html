@@ -5,25 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabahi Car Showroom</title>
     <link rel="stylesheet" href="styles.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <div class="logo">Tabahi Car Showroom</div>
         <nav>
             <ul>
-                <!-- <li><a href="#" id="home">Home</a></li> -->
-                <li><button onclick="carscroll()">Cars</button></li>
-                <li><button onclick="contactscroll()">Contact Us</button></li>
-                <li><button onclick="aboutscroll()">About us</button></li>
-                <!-- <li><a href="#" id="cars">Cars</a></li>
-                <li><a href="#" id="deals">Deals</a></li>
-                <li><a href="#" id="contact">Contact Us</a></li>-->
-
-            </ul> 
+                <li>Home</li>
+                <li onclick="carscroll()">Cars</li>
+                <li onclick="contactscroll()">Contact Us</li>
+                <li onclick="aboutscroll()">About Us</li>
+            </ul>
         </nav>
     </header>
 
@@ -32,89 +25,77 @@
             <source src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\background.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <audio src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\background.mp3"autoplay loop></audio>
-        <div class="content"> <h1>Welcome to Tabahi Cars</h1> 
+        <audio src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\background.mp3" autoplay loop></audio>
+        <div class="content">
+            <h1>Welcome to Tabahi Cars</h1>
             <p>Where cars do Tabahiiiiiiiii!!</p>
         </div>
     </section>
 
-    
-
     <section class="cars">
         <div class="car">
-            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 204407.png" alt="Car 1"> <!-- Replace with actual image URL -->
+            <video class="hover-video" poster="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 204407.png" muted height="300">
+                <source src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\UE4 RTX Cinematic Render- Lamborghini Terzo Millennio- neon style 4K.mp4" type="video/mp4">
+            </video>
             <h2>Lamborghini Terzo</h2>
         </div>
         <div class="car">
-            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 204824.png" alt="Car 2"> <!-- Replace with actual image URL -->
+            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 204824.png" alt="Car 2">
             <h2>La` Ferrari</h2>
         </div>
         <div class="car">
-            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 205107.png" alt="Car 3"> <!-- Replace with actual image URL -->
+            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 205107.png" alt="Car 3">
             <h2>Mercedes AMG One</h2>
         </div>
         <div class="car">
-            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 205353.png"alt="Car 3"> <!-- Replace with actual image URL -->
+            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 205353.png" alt="Car 4">
             <h2>Porsche</h2>
-        </div><br>
+        </div>
         <div class="car">
-            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 205727.png"alt="Car 3"> <!-- Replace with actual image URL -->
+            <img src="C:\Users\Rahul\OneDrive\Documents\car showroom\assets\Screenshot 2024-12-24 205727.png" alt="Car 5">
             <h2>Koenigsegg Jesko</h2>
+        </div>
+    </section>
 
-            
-        </section>
-        <section class="contact">
+    <section class="contact">
             
             
-            <input type="text" id="Fullname" class="Name" placeholder="First Name">
-            <input type="text" id="Lastname" class="Name" placeholder="Last Name">
-            <input type="email" id="Gmail" class="Name" placeholder="Gowdar@gmail.com">
-            <input type="number" id="number" class="Name" placeholder="Phone No.">
-            <textarea name="text" id="text" class="Name" placeholder="Write your address"></textarea>
-            <button onclick="submited()" id="submit" class="Name">Submit</button>
-            
-        </section>
+        <input type="text" id="Fullname" class="Name" placeholder="First Name" required>
+        <input type="text" id="Lastname" class="Name" placeholder="Last Name" required>
+        <input type="email" id="Gmail" class="Name" placeholder="Gowdar@gmail.com" required>
+        <input type="number" id="number" class="Name" placeholder="Phone No." required>
+        <textarea name="text" id="text" class="Name" placeholder="Write your address" required></textarea>
+        <button id="submit" class="Name">Submit</button>
+        
+    </section>
 
-        <div class="con">
-        <h2>Contact Us</h2>
+    <div class="con">
+    <h2>Contact Us</h2>
+</div>
+    <div class="icons">
+    <i id="icon" class="fa-brands fa-x-twitter"></i>
+    <i id="icon" class="fa-brands fa-facebook-f"></i>
+    <i id="icon" class="fa-brands fa-instagram"></i>
+    <i id="icon" class="fa-brands fa-discord"></i>
+    <i id="icon" class="fa-brands fa-telegram"></i>
+</div>
+<div class="con"><h2>About Us</h2></div>
+<div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maiores eius labore eum! Deleniti assumenda magni delectus quod velit? Est amet asperiores numquam id incidunt beatae, obcaecati iusto aut officia fuga reprehenderit saepe molestiae voluptatem suscipit esse fugiat impedit tempore illo, sit eum! Vitae eum sed dicta illum, ratione ut tenetur vero soluta dolorum reiciendis molestiae dolor porro nobis minima temporibus corporis ad quas commodi sint accusantium blanditiis. Optio numquam nesciunt assumenda consequuntur, itaque, provident sed repellendus ducimus beatae hic sint sapiente soluta fugit eaque officiis ea blanditiis ipsum recusandae. Eum odio ipsum inventore error, velit consectetur voluptatem veritatis accusamus.</div>
+
+<footer>
+    <p>&copy; 2024 Car Display. All rights reserved.</p>
+    
+</footer>
+
+    <!-- Popup for video playback -->
+    <div id="video-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <video id="popup-video" controls>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
     </div>
-        <div class="icons">
-        <i id="icon" class="fa-brands fa-x-twitter"></i>
-        <i id="icon" class="fa-brands fa-facebook-f"></i>
-        <i id="icon" class="fa-brands fa-instagram"></i>
-        <i id="icon" class="fa-brands fa-discord"></i>
-        <i id="icon" class="fa-brands fa-telegram"></i>
-    </div>
-    <div class="con"><h2>About Us</h2></div>
-    <div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maiores eius labore eum! Deleniti assumenda magni delectus quod velit? Est amet asperiores numquam id incidunt beatae, obcaecati iusto aut officia fuga reprehenderit saepe molestiae voluptatem suscipit esse fugiat impedit tempore illo, sit eum! Vitae eum sed dicta illum, ratione ut tenetur vero soluta dolorum reiciendis molestiae dolor porro nobis minima temporibus corporis ad quas commodi sint accusantium blanditiis. Optio numquam nesciunt assumenda consequuntur, itaque, provident sed repellendus ducimus beatae hic sint sapiente soluta fugit eaque officiis ea blanditiis ipsum recusandae. Eum odio ipsum inventore error, velit consectetur voluptatem veritatis accusamus.</div>
-
-    <footer>
-        <p>&copy; 2024 Car Display. All rights reserved.</p>
-        
-    </footer>
-    <script>
-        var car=document.getElementById('cars');
-
-        car.addEventListener("click",carscroll);
-
-        function carscroll(){
-            window.scrollTo(0, 300);
-        }
-        function contactscroll(){
-            window.scrollTo(0, 940);
-        }
-        function aboutscroll(){
-            window.scrollTo(0, 1110);
-        }
-
-        function submited(){
-            alert("Form Submitted");
-        }
-        
-        
-        
-        
-        
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
