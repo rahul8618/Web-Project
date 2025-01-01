@@ -271,6 +271,7 @@ button {
         display: flex;
         /* border: 2px solid black; */
         padding: 10px;
+        background-color: #b1a9a9;
         justify-content: center;
     
     }
@@ -291,21 +292,15 @@ button {
         justify-content: center;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 25px;
+        background-color: #b1a9a9;
         text-decoration: underline;
     }
-.info{
-    border: 15px ridge black;
-    background-color: #b1a9a9;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    border-radius: 20px;
-    font-size: 20px;
-    padding: 60px 50px;
-}
 #about{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    background-color: #b1a9a9;
+    padding: 60px 50px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
