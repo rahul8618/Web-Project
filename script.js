@@ -63,12 +63,13 @@ var car=document.getElementById('cars');
 car.addEventListener("click",carscroll);
 
 function carscroll(){
-    window.scrollTo(0, 300);
+    
+    window.scrollTo(0, 1000);
 }
 function contactscroll(){
-    window.scrollTo(0, 940);
+    window.scrollTo(0, 2000);
 }
 function aboutscroll(){
-    window.scrollTo(0, 1110);
+    window.scrollTo(0,2500);
 }
 
