@@ -284,7 +284,7 @@ button {
     color: white;
     background-color: black;
     border: 7px solid black;
-    border-radius: 50%;
+    border-radius: 30%;
 }
     .con{
         display: flex;  
@@ -293,3 +293,19 @@ button {
         font-size: 25px;
         text-decoration: underline;
     }
+.info{
+    border: 15px ridge black;
+    background-color: #b1a9a9;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 60px 50px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
