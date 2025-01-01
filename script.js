@@ -69,6 +69,6 @@ function contactscroll(){
     window.scrollTo(0, 940);
 }
 function aboutscroll(){
-    window.scrollTo(0, 1110);
+    window.scrollTo(0, 1560);
 }
 
